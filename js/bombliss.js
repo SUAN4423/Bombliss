@@ -1,3 +1,8 @@
+import backgroundImage from '../img/background.png'
+import normalImage from '../img/normal.png'
+import bombImage from '../img/bomb.png'
+import bigbombImage from '../img/bigbomb.png'
+
 var gamewidth = document.documentElement.clientWidth;
 var gameheight = document.documentElement.clientHeight;
 
@@ -23,10 +28,10 @@ let app = new PIXI.Application({
 let el = document.getElementById('app');
 el.appendChild(app.view);
 
-let backTexture = new PIXI.Texture.from('./img/background.png');
-let normalTexture = new PIXI.Texture.from('./img/normal.png');
-let bombTexture = new PIXI.Texture.from('./img/bomb.png');
-let bigbombTexture = new PIXI.Texture.from('./img/bigbomb.png');
+let backTexture = new PIXI.Texture.from(backgroundImage);
+let normalTexture = new PIXI.Texture.from(normalImage);
+let bombTexture = new PIXI.Texture.from(bombImage);
+let bigbombTexture = new PIXI.Texture.from(bigbombImage);
 
 let backSprite = new PIXI.Sprite(backTexture);
 backSprite.anchor.x = 0;

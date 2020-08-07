@@ -1,0 +1,17 @@
+{
+  "name": "bombliss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SUAN4423/Bombliss.git",
+  "author": "SUAN",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "serve": "parcel html/index.html",
+    "build": "parcel build html/index.html",
+    "clean": "rimraf dist"
+  }
+}
