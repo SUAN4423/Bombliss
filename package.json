@@ -1,0 +1,18 @@
+{
+  "name": "Bombliss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/3c1u/Bombliss.git",
+  "author": "Hikaru Terazono (3c1u) <3c1u@vulpesgames.tokyo>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "serve": "parcel ./index.html",
+    "build": "parcel build ./index.html",
+    "deploy": "parcel build ./index.html",
+    "clean": "rimraf dist"
+  }
+}
